@@ -1,6 +1,5 @@
 library(tidyverse)
 
-hello <- 4
 
 
 fev1 <- read.csv('fev1.csv')
