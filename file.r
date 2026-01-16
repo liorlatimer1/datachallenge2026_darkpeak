@@ -13,3 +13,14 @@ fev1_sampled <- fev1 %>%
   select(id) %>% 
   inner_join(fev1)
 
+
+
+#Question 3b
+obs <- fev1 %>% 
+  count(id)
+
+obs %>% 
+  ggplot(aes(n)) + 
+  geom_bar() +
+  labs(title = 'Counts of Observations per patient', x = 'Number of Observations', y = 'Count')+
+  theme_bw()
